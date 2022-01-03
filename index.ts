@@ -1,4 +1,4 @@
-import { br, button, createRef, h1, render, span, _ } from "../../src";
+import { br, button, createRef, h1, render, span, _ } from "oikia";
 import anime from "animejs";
 
 const App = () => {
