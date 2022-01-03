@@ -23,15 +23,7 @@ jobs:
         yarn
         yarn build
         
-    - name: Setup Git
-      run: |
-          git config --global user.name "dothq-robot"
-          git config --global user.email "72629236+dothq-robot@users.noreply.github.com"
-
-    - name: Push to GitHub
-      run: |
-          git pull
-          git status
-          git add .
-          git commit -m "🆙 Update demo"
-          git push origin gh-pages
+    - name: Push
+      uses: ad-m/github-push-action@v0.6.0
+      with:
+          branch: gh-pages
